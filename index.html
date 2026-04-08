@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>백굴비 — 웹 명함</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb" aria-hidden="true"></div>
+  <div class="bg-orb bg-orb--2" aria-hidden="true"></div>
+
+  <main class="card-wrap">
+    <article class="card" id="card">
+      <div class="card__inner">
+        <div class="card__face card__face--front">
+          <div class="avatar" aria-hidden="true">
+            <svg class="character" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+              <!-- ears (golden bear) -->
+              <circle cx="48" cy="72" r="34" fill="#ffb300" />
+              <circle cx="152" cy="72" r="34" fill="#ffb300" />
+              <circle cx="48" cy="72" r="18" fill="#ffcc80" />
+              <circle cx="152" cy="72" r="18" fill="#ffcc80" />
+              <!-- head -->
+              <ellipse cx="100" cy="118" rx="76" ry="72" fill="#ffd54f" />
+              <!-- muzzle -->
+              <ellipse cx="100" cy="138" rx="48" ry="42" fill="#ffe082" />
+              <!-- eyes -->
+              <ellipse cx="74" cy="102" rx="9" ry="11" fill="#1a1a1a" />
+              <ellipse cx="126" cy="102" rx="9" ry="11" fill="#1a1a1a" />
+              <circle cx="76" cy="99" r="3.5" fill="#fff" />
+              <circle cx="128" cy="99" r="3.5" fill="#fff" />
+              <!-- nose -->
+              <ellipse cx="100" cy="128" rx="13" ry="11" fill="#1a1a1a" />
+              <path d="M100 139 L100 152" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round" />
+              <!-- smile -->
+              <path d="M72 158 Q100 182 128 158" fill="none" stroke="#1a1a1a" stroke-width="2.8" stroke-linecap="round" />
+              <!-- red shirt (Pooh) -->
+              <path d="M32 178 Q100 208 168 178 L172 218 L28 218 Z" fill="#e53935" />
+            </svg>
+          </div>
+          <p class="name">백굴비</p>
+          <p class="role">구매운영팀 <span class="role-badge">수석</span></p>
+          <p class="tagline">좋은 협력으로 더 나은 조달을 만듭니다.</p>
+        </div>
+
+        <div class="card__face card__face--back">
+          <h2 class="back__title">연락처</h2>
+          <ul class="contacts">
+            <li>
+              <span class="contacts__label">이메일</span>
+              <a href="mailto:happyyw@skku.edu">happyyw@skku.edu</a>
+            </li>
+            <li>
+              <span class="contacts__label">전화</span>
+              <a href="tel:+82312905121">031-290-5121</a>
+            </li>
+          </ul>
+          <p class="hint">카드를 눌러 앞면으로</p>
+        </div>
+      </div>
+    </article>
+    <p class="flip-hint" id="flipHint">카드를 클릭하면 뒤집혀요</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
